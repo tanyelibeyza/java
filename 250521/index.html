@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css" integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- owl -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+  <body>
+
+    <header>
+        <div class="container">
+            <img src="hazir-resim/ust-resim.jpg" alt="ust_resim" class="img-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                              </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">İletişim</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          
+                          <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Aramanızı giriniz" aria-label="Search"/>
+                            <button class="btn btn-outline-success" type="submit">Ara</button>
+                          </form>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+
+        </div>
+       
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="hazir-resim/slider1.jpg" class="d-block w-100 img-fluid" alt="slider 1">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="hazir-resim/slider2.jpg" class="d-block w-100 img-fluid" alt="slider 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="hazir-resim/slider3.jpg" class="d-block w-100 img-fluid" alt="slider 3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                  <!-- Lightbox -->
+                  <div class="col-md-3">
+                    <a href="hazir-resim/res1.png" data-lightbox="res1">
+                        <img src="hazir-resim/res1.png" class="img-fluid mt-3" alt="resim 1">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="hazir-resim/res2.jpg" data-lightbox="res1">
+                        <img src="hazir-resim/res2.jpg" class="img-fluid mt-3" alt="resim 1">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="hazir-resim/res3.jpg" data-lightbox="res1">
+                        <img src="hazir-resim/res3.jpg" class="img-fluid mt-3" alt="resim 1">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="hazir-resim/res4.jpg" data-lightbox="res1">
+                        <img src="hazir-resim/res4.jpg" class="img-fluid mt-3" alt="resim 1">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="hazir-resim/res4.jpg" data-lightbox="res1">
+                        <img src="hazir-resim/res5.jpg" class="img-fluid mt-3" alt="resim 1">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="hazir-resim/res4.jpg" data-lightbox="res1">
+                        <img src="hazir-resim/res6.jpg" class="img-fluid mt-3" alt="resim 1">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="hazir-resim/res4.jpg" data-lightbox="res1">
+                        <img src="hazir-resim/res7.jpg" class="img-fluid mt-3" alt="resim 1">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="hazir-resim/res4.jpg" data-lightbox="res1">
+                        <img src="hazir-resim/res8.jpg" class="img-fluid mt-3" alt="resim 1">
+                    </a>
+                </div>
+                        
+                         
+
+                
+               
+            </div>
+
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row my-3">
+                <!-- Modal button -->
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uyelikModal">Üyelik Formu</button>
+                </div>
+
+                <!-- Liste -->
+                <div class="col-md-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                      </ul>
+
+            </div>
+
+            <!-- Owl -->
+                <div class="col-md-4">
+                    <div class="owl-carousel owl-theme">
+                      
+                        <img src="hazir-resim/res6.jpg" class="item" alt="das">
+                        <img src="hazir-resim/res7.jpg" class="item" alt="das">
+                        <img src="hazir-resim/res8.jpg" class="item" alt="das">
+                        <img src="hazir-resim/res9.jpg" class="item" alt="das">
+                        <img src="hazir-resim/res10.jpg" class="item" alt="das">
+                        <img src="hazir-resim/res12.jpg" class="item" alt="das">
+        
+        
+                      </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+     <!-- Modal -->
+     <div class="modal fade" id="uyelikModal" tabindex="-1" aria-labelledby="uyelikModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="uyelikModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <form action="kayit.html" method="post" class="needs-validation g-3" novalidate>
+                            <div class="mb-3 form-check">
+                                <label for="formPosta" class="form-label">Eposta Adresi:</label>
+                                <input type="email" class="form-control" id="formPosta" placeholder="Eposta girin" required>
+                                <div class="valid-feedback">Uygundur</div>
+                                <div class="invalid-feedback">Uygun değildir</div>
+                              </div>
+                              <div class="mb-3 form-check">
+                                <label for="formAd" class="form-label">Adınız: </label>
+                                <input type="text" class="form-control" id="formAd" placeholder="Adınızı girin" required>
+                                <div class="valid-feedback">Uygundur</div>
+                                <div class="invalid-feedback">Uygun değildir</div>
+                              </div>
+                              <button type="submit" class="btn btn-success">Kaydet</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js" integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true,
+          'albumLabel':	"Resim %1 / %2"
+        })
+
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+            loop: false,         // Sonsuz döngü aktif
+            margin: 10,         // Öğeler arası boşluk
+            nav: false,          // Önceki/sonraki oklar
+            dots: false,         // Alt kısımdaki küçük navigasyon noktaları
+            responsive: {
+                0:    { items: 1 },
+                576:  { items: 1 },
+                768:  { items: 1 },
+                992:  { items: 1 }
+            }
+            });
+      });
+
+
+    //   bootstrap form script
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+            }, false)
+        })
+        })()
+    </script>
+
+
+
+
+   
+</body>
+</html>
