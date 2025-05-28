@@ -1,0 +1,101 @@
+<!-- kiralik.html - Kiralık Daireler Sayfası -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiralık Daireler - Emlak Sitesi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="iletisim.html">
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Emlak</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
+          <li class="nav-item"><a class="nav-link active" href="kiralik.html">Kiralık Daireler</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Kiralık Daireler Tablosu -->
+  <div class="container my-5">
+    <h2 class="mb-4">Kiralık Daireler</h2>
+    <table id="kiralikTable" class="table table-striped" style="width:100%">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Adres</th>
+          <th>Fiyat</th>
+          <th>Oda Sayısı</th>
+          <th>Metrekare</th>
+          <th>İlan Tarihi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Örnek veriler (10 satır) -->
+        <tr><td>1</td><td>İstanbul, Kadıköy</td><td>12.000 TL</td><td>3+1</td><td>110</td><td>2024-05-01</td></tr>
+        <tr><td>2</td><td>Ankara, Çankaya</td><td>9.000 TL</td><td>2+1</td><td>90</td><td>2024-04-28</td></tr>
+        <tr><td>3</td><td>İzmir, Bornova</td><td>10.500 TL</td><td>3+1</td><td>115</td><td>2024-05-10</td></tr>
+        <tr><td>4</td><td>Bursa, Nilüfer</td><td>8.500 TL</td><td>2+1</td><td>95</td><td>2024-04-22</td></tr>
+        <tr><td>5</td><td>Antalya, Konyaaltı</td><td>11.000 TL</td><td>3+1</td><td>120</td><td>2024-05-05</td></tr>
+        <tr><td>6</td><td>Eskişehir, Tepebaşı</td><td>7.000 TL</td><td>1+1</td><td>70</td><td>2024-04-18</td></tr>
+        <tr><td>7</td><td>Samsun, Atakum</td><td>6.500 TL</td><td>1+1</td><td>65</td><td>2024-05-03</td></tr>
+        <tr><td>8</td><td>Konya, Selçuklu</td><td>8.200 TL</td><td>2+1</td><td>85</td><td>2024-04-30</td></tr>
+        <tr><td>9</td><td>Gaziantep, Şahinbey</td><td>7.800 TL</td><td>2+1</td><td>90</td><td>2024-05-07</td></tr>
+        <tr><td>10</td><td>Trabzon, Ortahisar</td><td>6.900 TL</td><td>1+1</td><td>60</td><td>2024-05-08</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Kayıt Ekle Butonu -->
+    <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#ekleModal">Yeni Kayıt Ekle</button>
+  </div>
+
+  <!-- Modal Formu -->
+  <div class="modal fade" id="ekleModal" tabindex="-1" aria-labelledby="ekleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ekleModalLabel">Yeni Kiralık Daire Ekle</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+        </div>
+        <div class="modal-body">
+          <form id="ekleForm">
+            <div class="mb-3"><label class="form-label">Adres</label><input type="text" class="form-control"></div>
+            <div class="mb-3"><label class="form-label">Fiyat</label><input type="text" class="form-control"></div>
+            <div class="mb-3"><label class="form-label">Oda Sayısı</label><input type="text" class="form-control"></div>
+            <div class="mb-3"><label class="form-label">Metrekare</label><input type="text" class="form-control"></div>
+            <div class="mb-3"><label class="form-label">İlan Tarihi</label><input type="date" class="form-control"></div>
+            <button type="submit" class="btn btn-success">Kaydet</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    © Tüm hakları saklıdır
+  </footer>
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#kiralikTable').DataTable();
+    });
+  </script>
+</body>
+</html>
